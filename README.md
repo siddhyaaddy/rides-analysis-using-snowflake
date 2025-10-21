@@ -1,4 +1,4 @@
-🚕 Ride Prediction Analysis using Snowflake
+##🚕 Ride Prediction Analysis using Snowflake
 
 A cloud-based ride demand prediction and analytics system built on Snowflake.
 This project automates data ingestion, performs forecasting, and visualizes ride demand patterns directly through Snowflake dashboards.
