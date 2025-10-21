@@ -1,19 +1,19 @@
-##🚕 Ride Prediction Analysis using Snowflake
+## Ride Prediction Analysis using Snowflake
 
 A cloud-based ride demand prediction and analytics system built on Snowflake.
 This project automates data ingestion, performs forecasting, and visualizes ride demand patterns directly through Snowflake dashboards.
 
-🚀 Project Overview
+Project Overview
 
 An end-to-end pipeline designed to analyze and predict ride demand across New York City using Snowflake’s scalable data warehouse.
 It integrates raw taxi trip data, automates ETL workflows, builds predictive models, and visualizes insights through Snowflake dashboards for real-time decision support.
 
-📊 Dashboard Preview
+# Dashboard Preview
 <img width="1918" height="1035" alt="results" src="https://github.com/user-attachments/assets/e76f6297-a50e-4d35-aea6-25ffa0e6aa81" />
 
 The dashboard presents actual vs predicted rides across NYC zones like JFK Airport, Grand Central, and Lincoln Square, revealing hourly and regional demand fluctuations.
 
-📁 Project Structure
+# Project Structure
 ride-prediction-analysis-snowflake/
 ├── data/                   # Raw and processed ride data
 ├── notebooks/              # Jupyter notebooks for EDA and forecasting
@@ -24,7 +24,7 @@ ride-prediction-analysis-snowflake/
 ├── notes.md                 # Development notes and insights
 └── sample.env               # Environment configuration template
 
-✨ Key Features
+# Key Features
 
 Automated ETL Pipelines — Streamlined ingestion and transformation into Snowflake
 
@@ -36,14 +36,14 @@ Performance Optimization — Caching, clustering, and query tuning for efficienc
 
 Scheduled Updates — Automated analytics refresh and data validation
 
-⚙️ Tech Stack
+# Tech Stack
 Layer	Tools / Technologies
 Data Warehouse	Snowflake
 Programming	Python (Pandas, NumPy, LightGBM)
 Visualization	Snowflake Dashboards
 Automation	Python-based ETL scripts
 Version Control	Git + GitHub
-🔧 Setup and Installation
+# Setup and Installation
 Prerequisites
 
 Python 3.8+
@@ -81,7 +81,7 @@ Initialize Snowflake database
 
 python src/setup_snowflake.py
 
-🗄️ Database Schema
+# Database Schema
 CREATE TABLE ride_data (
     pickup_datetime TIMESTAMP,
     pickup_location_id INT,
@@ -98,7 +98,7 @@ CREATE TABLE ride_predictions (
     predicted_rides INT
 );
 
-📈 Analytics and Insights
+# Analytics and Insights
 Forecasting
 
 Predicts hourly and daily ride volumes per zone
@@ -119,7 +119,7 @@ Tracks weekday vs weekend demand behavior
 
 Detects rush-hour peaks and off-peak trends
 
-🔄 Workflow
+# Workflow
 
 ETL — Python scripts extract, clean, and load data into Snowflake
 
@@ -129,7 +129,7 @@ Storage — Predictions stored and joined within Snowflake
 
 Visualization — Results rendered via native Snowflake dashboards
 
-🚀 Performance Optimization
+# Performance Optimization
 
 Implemented clustering keys for faster queries
 
@@ -137,7 +137,7 @@ Used result caching and incremental updates
 
 Improved dashboard responsiveness by 25%
 
-🔒 Security
+# Security
 
 Managed credentials via .env
 
@@ -145,7 +145,7 @@ Encrypted Snowflake connections
 
 Role-based access control for queries and dashboards
 
-🧩 Future Enhancements
+# Future Enhancements
 
 Integration with Snowpark for in-database ML
 
